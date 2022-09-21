@@ -4,6 +4,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
+    background-color: #ffffff85;
+    border-radius: 7px;
+    max-width: 85vw;
+    margin: auto;
 }
 
 .text-center {
@@ -19,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2em;
+    margin: 0 1em 0 2em;
 }
 
 .login {
@@ -27,17 +31,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2em;
+    margin: 0 2em 2em 1em;
 }
 
 .login .logo-users img {
-    width: 125px;
+    width: 117px;
 }
 
 h2 {
     color: rgb(121, 32, 25);
     font-size: 3em;
     text-align: center;
+    margin: 0.6em 0 0.4em 0;
 }
 
 a.forgot-password {
@@ -46,29 +51,19 @@ a.forgot-password {
     text-align: center;
 }
 
-#intro {
-    vertical-align: 10px;
-}
-
-#in {
-    vertical-align: 20px;
-}
-
-#boton {
-    vertical-align: 20px;
-    width: 9%;
-}
-
-#button {
-    vertical-align: 20px;
-    width: 9%;
-}
-
 /* Login */
 
 body {
     font-family: 'Lato', sans-serif;
-    color: #4A4A4A;
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-size: initial;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 form {
