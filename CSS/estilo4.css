@@ -1,0 +1,101 @@
+/* Importación de fuentes de google fonts */ 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+body {
+
+    margin: auto;
+    font-family: 'Noto Sans', sans-serif;
+
+    height: 100%; 
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #e1e1e1;
+    padding: 20px 20px 20px 30px;
+  }
+h1{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    color: #2D3E50;;
+}
+div{
+    width: 1400px;
+    height: 600px;
+    margin: auto;
+}
+.Info {
+    float:left;
+    width: 350px;
+    font-weight: bold;
+      border: 0px outset #EAF0F6;   
+      color: #2D3E50;
+    background-color: #e1e1e1;
+      text-align: center;
+    border-radius:4px;
+      
+}
+div{
+    width: 1400px;
+    height: 600px;
+    margin: auto;
+}
+.Info2 {
+    float:left;
+    margin: auto;
+    width:600px;
+    height:600px;
+    font-weight: bold;
+      border: 0px outset #EAF0F6;   
+      color: #2D3E50;
+    background-color: #EAF0F6;
+      text-align: center;
+    border-radius:4px;
+}
+
+.Info3 {
+    float:left;
+    margin: auto;
+    width:500px;
+    height:600px;
+    font-weight: bold;
+      border: 0px outset #EAF0F6;   
+      color: #2D3E50;
+    background-color: #EAF0F6;
+      text-align: center;
+      border-radius:4px;
+}
+
+table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 18px;    margin: 45px;     width: 480px; text-align: left;    border-collapse: collapse; }
+
+th {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: #b9c9fe;
+    border-top: 4px solid #aabcfe;    border-bottom: 1px solid #fff; color: #039; }
+
+td {    padding: 8px;     background: #EAF0F6;     border-bottom: 1px solid #EAF0F6;
+    color: #2D3E50;    border-top: 1px solid transparent; }
+
+tr:hover td { background: #d0dafd; color: #339; }
+
+footer {
+    background-color: #e1e1e1;
+    position: absolute;
+    bottom: 0;
+    width: 1450px;
+    height: 50px;
+    color:#2D3E50;
+    text-align: center;
+}
+
+button{
+  position:absolute;
+  top:10px;
+  left:10px;
+  width:60px;
+  background-color: #e1e1e1;
+  text-align: center;
+  border: 0px outset #EAF0F6; 
+  background-position:center;
+
+}
+
