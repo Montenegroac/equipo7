@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/CSS/estilo4.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js"></script>
+    <title>pagina4</title>
+</head>
+<body>
+    <h1>
+        Informacion Personal
+    </h1>
+
+    <button type="button"> <img src="static/Images/deshacer.png" height ="50" width="50" /></button>
+
+    <div class="Info">
+        
+        <img src="static/images/icon3.png"  width="300" height="350">
+        <h2>
+            Jose Luis Rincon
+        </h2>
+        <h2>
+            123456789
+        </h2>
+        <h2>
+            Ingeniero
+        </h2>
+
+    </div>
+
+    <div class="Info2">
+        <table style="width:80%">
+            <tr>
+              <td>Edad</td>
+              <td>24 años <i class="fa fa-heart"> </i> <i class="fa fa-heart"> </i></td>
+            </tr>
+            <tr>
+                <td >Fecha de ingreso</td>
+                <td>10/01/1789 <i class="fa fa-calendar"></i> </td>
+            </tr>
+            <tr>
+                <td>Fecha de termino de contrato</td>
+                <td>10/01/1259  <i class="fa fa-calendar"></i></td>
+            </tr>
+            <tr>
+                <td>Tipo de contrato </td>
+                <td>Indefinido  <i class="fa fa-user"></i></td>
+            </tr>
+            <tr>
+                <td>Salario</td>
+                <td>$2.000.000  <i class="fa fa-money"></i></td>
+            </tr>
+            <tr>
+                <td>Area</td>
+                <td>Tecnologia <i class="fa fa-android"></i></td> 
+                
+            </tr>
+          </table>
+
+    </div>
+    <div class = Info3>
+        <canvas id="myChart" width="400" height="400"></canvas>
+        
+        <script>
+            var ctx= document.getElementById("myChart").getContext("2d");
+            var myChart= new Chart(ctx,{
+                type:"pie",
+                data:{
+                    labels:['Responsabilidad','Respeto','Ausencias'],
+                    datasets:[{
+                            label:'Num datos',
+                            data:[10,9,2],
+                            backgroundColor:[
+                                'rgb(66, 134, 244,0.5)',
+                                'rgb(74, 135, 72,0.5)',
+                                'rgb(229, 89, 50,0.5)'
+                            ]
+                    }]
+                },
+                options:{
+                    scales:{
+                        yAxes:[{
+                                ticks:{
+                                    beginAtZero:true
+                                }
+                        }]
+                    }
+                }
+            });
+        </script>
+
+    </div>
+
+    <footer>
+        <h6 class="text-center"> &copy; Derechos Reservados Grupo 7</h6>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion</title>
+    <link rel="stylesheet" href="../static/CSS/estilos.css">
+    <script src="static/JS/script.js"></script>
+</head>
+
+<body>
+    <div class="container" >
+        <div class="title">
+            <h2>Gestion de empleados</h2>
+        </div>
+        <div class="text-info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iusto totam ex voluptate impedit autem
+                iste
+                magnam! Fuga sed animi, maxime itaque tempore iusto, quis in, error minima quam inventore</p>
+        </div>
+        <div class="login">
+            <div>
+                <div class="logo-users text-center">
+                    <img src="static/images/multy-user.png" alt="logo portada">
+                </div>
+                <form action="/login" method="POST">
+                    <div class="form-field">
+                        <input type="email" name="email" placeholder="Correo" required />
+                    </div>
+
+                    <div class="form-field">
+                        <input type="password" name="password" placeholder="Contraseña" required />
+                    </div>
+
+                    <div class="form-field">
+                        <button class="btn" type="submit" onClick="login(this.form)">Iniciar sesión</button>
+                    </div>
+                </form>
+                <div class="text-center">
+                    <a class="forgot-password text-center" href="#" target="_blank">¿Olvide mi Contraseña?</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
