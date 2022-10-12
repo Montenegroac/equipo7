@@ -21,11 +21,11 @@ def login():
         else:
             rol = respuesta[0][2]
             if rol == "ADMINISTRADOR":
-                return redirect(url_for('Adm', id = respuesta[0][5], nombre = respuesta[0][1]))
+                return redirect(url_for('Adm', id = respuesta[0][5], nombre = respuesta[0][1], rol = respuesta[0][2]))
             if rol == "Usuario":
                 return redirect(url_for('Usuario'))
             if rol == "SuperAdm":
-                return redirect(url_for('Superadm'))
+                return redirect(url_for('Superadm', id = respuesta[0][5], nombre = respuesta[0][1], rol = respuesta[0][2]))
             else:
                 return ("<center> <h1> Tu rol no esta validado correctamente, habla con un superior <h1>")
         
@@ -33,17 +33,17 @@ def login():
         return render_template("index.html")
 
 
-@app.route("/Adm/<id>/<nombre>",methods=['GET', 'POST'])
-def Adm(id,nombre):
-    return render_template("Adm.html", data={"id": id,"nombre":nombre})
+@app.route("/Adm/<id>/<nombre>/<rol>",methods=['GET', 'POST'])
+def Adm(id,nombre, rol):
+    return render_template("Adm.html", data={"id": id,"nombre":nombre, "rol": rol})
 
 @app.route("/Usuario",methods=["get"])
 def Usuario():
     return render_template("usuario4.html")
 
-@app.route('/Superadm',methods=['GET', 'POST'])
-def Superadm():
-    return render_template("Super_Adm.html")
+@app.route('/Superadm/<id>/<nombre>/<rol>',methods=['GET', 'POST'])
+def Superadm(id,nombre, rol):
+    return render_template("Super_Adm.html",data={"id": id,"nombre":nombre, "rol": rol})
 
 
 @app.route("/Superadm2",methods=["get"])
